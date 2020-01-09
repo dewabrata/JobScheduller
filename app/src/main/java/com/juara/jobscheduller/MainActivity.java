@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity  {
 
     }
 
-    MainScheduller mTestService;
+
     private static int kJobId = 0;
 
 

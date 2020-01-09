@@ -10,9 +10,9 @@ import java.util.List;
 public class MainScheduller extends JobService {
     @Override
     public boolean onStartJob(JobParameters params) {
-        Intent service = new Intent(getApplicationContext(), TaskService.class);
-        getApplicationContext().startService(service);
-        SchedullerJobs.scheduleJob(getApplicationContext()); // reschedule the job
+        Intent service = new Intent(MainScheduller.this, TaskService.class);
+        startService(service);
+        // reschedule the job
         return true;
     }
 

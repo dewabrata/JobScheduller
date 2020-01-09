@@ -43,7 +43,7 @@ public class TaskService extends Service {
 
     private void postDataGPS() {
 
-
+        SchedullerJobs.scheduleJob(TaskService.this);
         Toast.makeText(TaskService.this,"JALAN\" + new Date()",Toast.LENGTH_SHORT).show();
         Log.d("TASSSSK SERVICE","JALAN " + new Date());
     }
